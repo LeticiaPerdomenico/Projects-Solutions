@@ -1,0 +1,68 @@
+/*1*/
+a {
+    color: pink;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+    color: purple;
+}
+
+/*2*/
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+}
+
+/*3*/
+.btn {
+    border: 1px solid blue;
+    border-radius: 2px;
+    font-family: 'Raleway', sans-serif;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*4*/
+.btn:hover {
+    color: lightblue;
+    font-size: 25px;
+}
+
+.btn:active {
+    color: white;
+    font-size: 25px;
+    background-color: lightblue;
+    border: 1px solid lightblue;
+}
+
+/*5*/
+.activity {
+    border: 5px solid pink;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0;
+}
+
+/*6*/
+.activity:hover {
+    background-color: #fff;
+    color: #5495ff;
+    transition: color .1s ease-in, background-color .1s ease-in;
+}
+
+.activity:active {
+    font-size: 40px;
+    transition: font-size .1s;
+}

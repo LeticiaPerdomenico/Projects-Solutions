@@ -1,0 +1,37 @@
+/*4*/
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: indigo;
+  }
+  
+  h1 {
+    text-align: center;
+    color: gold;
+  }
+  
+  h2 {
+    color: orange;
+    text-align: center;
+  }
+  
+  table {
+    border: 2px solid palegoldenrod;
+    width: 650px;
+    margin: 0 auto;
+  }
+  
+  thead {
+    background-color: palegoldenrod;
+  }
+  
+  td {
+    border-top: 1px solid palegoldenrod;
+    color: paleturquoise;
+  }
+  
+  /*5*/
+  .code {
+    font-family: monospace;
+    background-color: palegreen;
+    color: black;
+  }

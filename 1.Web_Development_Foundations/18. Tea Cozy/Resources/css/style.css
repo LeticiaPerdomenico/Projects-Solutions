@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: seashell;
+    font-family: Helvetica;
+}
+
+body {
+    background-color: black;
+    font-size: 22px;
+    opacity: 0.9;
+    text-align: center;
+}
+
+header {
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 69px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+main {
+    box-sizing: border-box;
+    margin: 69px auto 15px;
+    max-width: 1240px;
+    position: relative;
+    top: 0;
+}
+
+#logo {
+    display: flex;
+    align-content: center;
+    text-align: left;
+    width: 50%;
+}
+
+#logo-img {
+    height: 50px;
+    padding-left: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    width: 50%;
+}
+
+nav ul {
+    display: inline-flex;
+    align-content: center;
+    justify-content: flex-end;
+    width: auto;
+}
+
+nav li {
+    list-style-type: none;
+    margin-left: 25px;
+}
+
+#mission {
+    background: url(../img/img-mission-background.jpg) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    min-height: 700px;
+}
+
+#mission-div {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 0;
+    width: 100%;
+}
+
+#mission-div h2,
+#mission-div h4 {
+    flex-basis: 100%;
+    width: 100%;
+}
+
+#mission-div h2 {
+    margin-bottom: 20px;
+}
+
+#feature {
+    margin: auto;
+    max-width: 1050px;
+    padding: 75px 0 50px;
+}
+
+#feature h2 {
+    margin-bottom: 25px;
+}
+
+#feature h4 {
+    margin-bottom: 20px;
+}
+
+#pics,
+#cards {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.image {
+    display: inline-block;
+    margin: 20px;
+}
+
+.image figcaption {
+    margin-top: 10px;
+}
+
+.image figure img {
+    height: 200px;
+    width: 300px;
+}
+
+#locations {
+    background: url(../img/img-locations-background.jpg) center center no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+#locations h2 {
+    padding: 10px 0 0;
+}
+
+.loc-card {
+    background-color: black;
+    box-sizing: border-box;
+    margin: 15px 20px;
+    opacity: 1;
+    padding: 25px 0;
+    width: 300px;
+}
+
+.loc-card h3,
+.loc-card p {
+    line-height: 200%;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    min-height: 200px;
+}
+
+#contact h2,
+#contact h5 {
+    flex: 1;
+}
+
+footer {
+    margin-left: 20px;
+    text-align: left;
+}
