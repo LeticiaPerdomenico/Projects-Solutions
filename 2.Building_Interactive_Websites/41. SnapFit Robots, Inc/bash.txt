@@ -1,0 +1,36 @@
+/*1*/
+git init
+
+/*2*/
+git status
+
+/*3*/
+git add disclaimer.txt
+git add instructions.txt
+git add warranty.txt
+
+/*4*/
+git status
+
+/*5*/
+git commit -m 'three new files added'
+
+/*6*/
+git log
+
+/*8*/
+git add disclaimer.txt
+
+/*9*/
+git commit -m 'A new warning added.'
+
+/*10*/
+git log
+
+/*11*/
+git add warranty.txt
+git commit -m 'keep receipt.'
+git add instructions.txt
+git commit -m 'AI compatibility.'
+git add disclaimer.txt
+git commit -m 'Children compatibility warning added.'

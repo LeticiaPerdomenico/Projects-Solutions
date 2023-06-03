@@ -1,0 +1,33 @@
+/*1*/
+git checkout HEAD road-not-taken.txt
+
+/*3*/
+git checkout -- oven-bird.txt
+
+/*5*/
+git diff fire-and-ice.txt
+
+/*6*/
+git add .
+
+/*7*/
+git reset HEAD fire-and-ice.txt
+
+/*8*/
+git commit -m 'remove fire and ice.'
+
+/*10*/
+git add .
+
+/*11*/
+git commit -m 'do not read my poems.'
+
+/*12*/
+git log
+//(seven first characters of sha ID of previous commit)
+git reset b72ed7e 
+
+/*13*/
+git checkout HEAD road-not-taken.txt
+git checkout HEAD oven-bird.txt
+git checkout HEAD fire-and-ice.txt

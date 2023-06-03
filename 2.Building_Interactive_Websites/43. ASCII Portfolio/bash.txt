@@ -1,0 +1,24 @@
+/*1*/
+git show HEAD portrait.txt
+git checkout HEAD portrait.txt
+
+/*3*/
+git add portrait.txt
+
+/*4*/
+git commit -m 'new eyebrows.'
+
+/*6*/
+git add .
+
+/*7*/
+git commit -m 'completition date updated.'
+
+/*9*/
+git add .
+
+/*10*/
+git reset house.txt
+
+/*11*/
+git commit -m 'Author added.'

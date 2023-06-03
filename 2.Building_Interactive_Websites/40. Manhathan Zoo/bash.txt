@@ -1,0 +1,29 @@
+/*1*/
+git init
+
+/*2*/
+git status
+
+/*3*/
+git add meal-regimens.txt
+
+/*4*/
+git commit -m "Manhattan Zoo meals"
+
+/*6*/
+git add meal-regimens.txt
+
+/*7*/
+git status
+
+/*8*/
+git commit -m "Lomg-Tailed Chinchillas added"
+
+/*9*/
+git log
+
+/*10*/
+git add meal-regimens.txt
+git commit -m "Poison Dart Frogs added"
+git add meal-regimens.txt
+git commit -m "Western Lowland Gorilla"
