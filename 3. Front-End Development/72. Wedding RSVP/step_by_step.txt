@@ -1,0 +1,12 @@
+1. Open https://github.com/Codecademy/wedding-rsvp-off-platform-project.
+2. Fork the repository.
+3. Clone the repository to your computer, click on Code, the con the copy icon next to http://... open a shell on your computer, and write the command git clone http://... and paste the address you've coppied.
+4. Change the current directory with cd wedding-rsvp-off-platform-project
+5. Create a new branch with the command git checkout -b rsvp-yourname (replace yourname with your own name).
+6. Open guests.md using your text editor and include your name and the guests your are inviting to the wedding. Save your changes 
+7. Back on the shell add the changes with git add guests.md.
+8. Commit your changes with git commit -m "Added my name to the list of guests."
+9. Go back to main branch with git chackout main.
+10. Merge your new branch with git merge rsvp-yourname
+11. Delete that branch with git branch -d rsvp-yourname
+12. Push the changes to the repository with git push origin main

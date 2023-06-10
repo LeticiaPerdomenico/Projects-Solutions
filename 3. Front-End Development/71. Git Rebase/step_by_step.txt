@@ -1,0 +1,17 @@
+1. Open https://github.com/Codecademy/practice-rebase-off-platform-project
+2. Click on fork, and fork again.
+3. Click on code, click on the copy symbol next to the http... address
+4. Go to a shell on your computer and write the command: git clone and paste the address you've coppied (ctrl + v).
+5. Then write ls, to list all the files on your location.
+6. Change to the directory you have cloned with cd practice-rebase-off-platform-project
+7. With ls again we see all the files and directories inside the folder.
+8. Use git branch to check which branches you have cloned to your computer.
+9. We only have main, but since we know we have two more branches, we must clone them too. With 
+   git checkout part_1_Monday
+   git pull
+   git checkout part_2_Monday
+   git pull
+10. Check all commits with git log --graph --decorate --oneline --all
+11. To cechk first branch we write git checkout part_1_Monday
+12. And we rebase this first branch with main with git rebase main
+13. Finally we check the new state of the branches with git log --graph --decorate --online --all

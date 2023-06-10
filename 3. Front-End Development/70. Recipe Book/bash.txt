@@ -1,0 +1,38 @@
+/*1*/
+pwd
+ls
+cd veggie-favorites
+
+/*2*/
+git add chili.txt
+git add squash-lasagna.txt
+git commit -m "add Instructions"
+
+/*3*/
+cd ../veggie-clone
+
+/*4*/
+git fetch 
+git branch
+
+/*5*/
+git merge origin/master
+
+/*6*/
+git branch new-recipe
+git checkout new-recipe
+
+/*7*/
+git add new-recipe.txt
+git commit -m "add salad recipe"
+
+/*8*/
+git fetch
+
+/*9*/
+git push origin new-recipe
+
+/*10*/
+cd ../veggie-favorites
+git branch
+git checkout new-recipe

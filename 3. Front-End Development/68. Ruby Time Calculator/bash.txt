@@ -1,0 +1,13 @@
+/*1*/
+git merge edits
+
+/*4*/
+git add README.md
+
+/*6*/
+git add examples.md
+git commit -m "Resolve merge conflict"
+
+/*7*/
+git branch
+git branch -d edits

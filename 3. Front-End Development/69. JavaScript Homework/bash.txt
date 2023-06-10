@@ -1,0 +1,29 @@
+/*1*/
+git clone maryrose-hw my_first_clone
+
+/*2*/
+pwd
+ls
+cd my_first_clone/
+
+/*4*/
+git branch
+git branch mr-comments
+git checkout mr-comments
+
+/*6*/
+git add homework.js
+
+/*7*/
+git commit -m "add comments"
+
+/*8*/
+git push origin mr-comments
+
+/*9*/
+pwd
+cd ../maryrose-hw
+git branch
+git checkout mr-comments
+git checkout master
+git merge mr-comments

@@ -1,0 +1,36 @@
+/*1*/
+git branch
+
+/*2*/
+git branch -D moma
+git branch -D whitney
+
+/*3*/
+git branch unordered-list
+git checkout unordered-list
+
+/*5*/
+git add index.html
+
+/*6*/
+git commit -m "add unordered list"
+
+/*7*/
+git checkout master
+git merge unordered-list
+
+/*8*/
+git branch big-heading
+
+/*9*/
+git checkout big-heading
+
+/*10*/
+git add index.html
+
+/*11*/
+git commit -m "make heading bigger"
+
+/*12*/
+git checkout master
+git merge big-heading
