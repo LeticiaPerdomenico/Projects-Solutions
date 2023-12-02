@@ -1,0 +1,42 @@
+/*#1*/
+CREATE TABLE friends (
+  id INTEGER,
+  name TEXT,
+  birthday DATE,
+  email TEXT,
+  phone INTEGER
+);
+/*#2*/
+INSERT INTO friends (id, name, birthday)
+VALUES (1, 'Ororo Munroe', '1940-05-30');
+/*#3*/
+/*SELECT *
+FROM friends;*/
+/*#4*/
+INSERT INTO friends (id, name, birthday, email, phone)
+VALUES (2, 'Pepe Honguito', '1980-03-30', 'hola@hotmail.com', 305148752);
+INSERT INTO friends (id, name, birthday, email, phone)
+VALUES (3, 'Juan Pichota', '1999-06-25', '1@1.com', 7865369842);
+/*#5*/
+UPDATE friends
+SET name = 'Storm'
+WHERE id = 1;
+/*#6*/
+ALTER TABLE friends
+ADD COLUMN email2 TEXT;
+/*#7*/
+UPDATE friends
+SET email2 = 'storm@codecademy.com'
+WHERE id = 1;
+UPDATE friends
+SET email2 = 'laralara@hotmail.com'
+WHERE id = 2;
+UPDATE friends
+SET email2 = 'chirp@gmail.com'
+WHERE id = 3;
+/*#8*/
+DELETE FROM friends
+WHERE id = 1;
+/*#9*/
+SELECT * 
+FROM friends;

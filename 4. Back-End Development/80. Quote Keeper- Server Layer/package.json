@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "chai": "^4.3.10",
+    "debug": "^4.3.4",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "http": "^0.0.1-security",
+    "mocha": "^10.2.0",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "test": "mocha test/features/user-visits-root-test.js"
+  },
+  "devDependencies": {
+    "chromedriver": "^119.0.1",
+    "phantomjs-prebuilt": "^2.1.16",
+    "webdriverio": "^8.24.6"
+  }
+}
