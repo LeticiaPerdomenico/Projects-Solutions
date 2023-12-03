@@ -1,0 +1,92 @@
+/*#1*/
+SELECT * FROM trips;
+SELECT * FROM riders;
+SELECT * FROM cars;
+/* 
+trips table
+
+id - trip ID
+date - trip date
+pickup - pickup time stamp
+dropoff - drop-off time stamp
+rider_id - user ID
+car_id - car ID
+type - type of trip (X, POOL, XL)
+cost - trip cost
+riders table
+
+id - user ID
+first - user first name
+last - user last name
+username - user handle
+rating - user average rating
+total_trips - total rides ridden
+referred - referred by (user ID)
+cars table
+
+id - car ID
+model - car model
+OS - operating system
+status - active or maintenance
+trips_completed - total trips completed
+*/
+/*#2*/
+/*
+The primary key of trips, riders and cars is id.
+*/
+/*#3*/
+SELECT riders.first,
+  riders.last,
+  cars.model
+FROM riders, cars;
+/*#4*/
+SELECT *
+FROM trips
+LEFT JOIN riders
+  ON trips.rider_id = riders.id;
+
+SELECT trips.date,
+  trips.pickup,
+  trips.dropoff,
+  trips.type,
+  trips.cost,
+  riders.first,
+  riders.last,
+  riders.username
+FROM trips
+LEFT JOIN riders
+  ON trips.rider_id = riders.id;
+/*#5*/
+SELECT trips.rider_id,
+  trips.type,
+  trips.cost,
+  cars.trips_completed
+FROM trips
+INNER JOIN cars
+  ON trips.car_id = cars.id;
+/*#6*/
+SELECT *
+FROM riders
+UNION
+SELECT *
+FROM riders2;
+/*#7*/
+SELECT ROUND(AVG(cost), 2)
+FROM trips;
+/*#8*/
+SELECT *
+FROM riders
+WHERE total_trips < 500
+UNION
+SELECT *
+FROM riders2
+WHERE total_trips < 500;
+/*#9*/
+SELECT COUNT(*)
+FROM cars
+WHERE status = 'active';
+/*#10*/
+SELECT id, model, trips_completed
+FROM cars
+ORDER BY trips_completed DESC
+LIMIT 2;
