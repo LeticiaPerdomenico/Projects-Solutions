@@ -1,0 +1,8 @@
+#10
+listen_addresses = 'localhost, 235.84.86.65'
+#11
+port = 61342
+#12
+ssl = on
+log_connections = yes
+log_destination = 'syslog'

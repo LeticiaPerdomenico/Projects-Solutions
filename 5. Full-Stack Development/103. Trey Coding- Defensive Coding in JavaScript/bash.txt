@@ -1,0 +1,9 @@
+#2
+eslint .
+#3
+eslint --fix .
+#4
+npm start
+#9
+Should be done in the localhost/app, search por Regex Evaluator in the main menu, then open the file formValidator.js and copy/paste /^[a-z ,.'-]+$/i;
+/.*/; /*/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/*/ and /([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))/; with out the begining /, to check if they are safe paths.

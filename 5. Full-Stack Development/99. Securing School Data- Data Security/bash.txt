@@ -1,0 +1,33 @@
+#1
+CREATE ROLE p_students_read;
+CREATE ROLE p_teachers_read;
+CREATE ROLE p_students_write;
+CREATE ROLE p_teachers_write;
+#2
+GRANT SELECT ON students TO p_students_read;
+GRANT SELECT ON teachers TO p_teachers_read;
+#3
+GRANT SELECT, INSERT, UPDATE, DELETE ON students TO p_students_write;
+GRANT SELECT, INSERT, UPDATE, DELETE ON teachers TO p_teachers_write;
+#4
+CREATE ROLE g_school;
+CREATE ROLE g_district;
+#5
+GRANT p_students_read TO g_school;
+GRANT p_teachers_read TO g_school;
+#6
+GRANT p_students_write TO g_district;
+GRANT p_teachers_write TO g_district;
+#7 
+CREATE ROLE u_principal_skinner WITH LOGIN;
+CREATE ROLE u_teacher_hodge WITH LOGIN;
+CREATE ROLE u_it_sonia WITH LOGIN;
+#8
+GRANT g_district TO u_principal_skinner;
+GRANT g_school TO u_teacher_hodge;
+GRANT g_school TO u_it_sonia;
+#9
+REVOKE ALL ON students FROM PUBLIC;
+REVOKE ALL ON teachers FROM PUBLIC;
+#22
+git status

@@ -1,0 +1,7 @@
+#1
+node app.js
+#12
+Ctrl + C
+node app.js
+in a new bash window the command:
+curl -X POST http://localhost:4001/submit

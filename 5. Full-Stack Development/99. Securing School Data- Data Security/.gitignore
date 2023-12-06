@@ -1,0 +1,5 @@
+#The files in this exercise that are being ignore, are .txt if not they are not going to be uploaded.
+#21
+.env
+pg_hba.conf
+postgreql.conf
